@@ -1,0 +1,228 @@
+body {
+  margin:0 0 0 0; padding:0;
+  background:#151515;
+  text-align:left;
+  font-size:0.9em;
+}
+
+p, div {
+  font: 1em/1.2em Arial, Verdana, Helvetica, sans-serif;
+  color: #CCCCCC;
+}
+
+a, a:visited {
+  /* color: #a37159; */
+  color: #0066CC;
+  text-decoration: none;
+}
+
+a:hover {
+  padding: 2px; margin: -2px;
+  background-color: #224;
+  color:#fff;
+  text-decoration:none;
+}
+
+input[type=text]:focus {
+  background: #336699;
+  color: white;
+}
+
+#content {
+  width:95%;
+}
+
+/* Syntax highlighting */
+ol.ruby { color: #CCCCCC;}
+ol.ruby .normal {}
+ol.ruby .comment { color: #777; font-style: italic; }
+ol.ruby .keyword { color: #AAB9FF; font-weight: bold; }
+ol.ruby .method { color: #7a44b2; }
+ol.ruby .class { color: #c1c042; }
+ol.ruby .module { color: #c1c042 }
+ol.ruby .punct { color: #fff;  }
+ol.ruby .symbol { color: #6681d3; }
+ol.ruby .string { color: #ad9360; }
+ol.ruby .char { color: #fff; }
+ol.ruby .ident { color: #CCCCCC; }
+ol.ruby .constant { color: #c1c042; }
+ol.ruby .regex { color: #666; }
+ol.ruby .number { color: #fff; }
+ol.ruby .attribute { color: #5bb; }
+ol.ruby .global { color: #7FB; }
+ol.ruby .expr { color: #5bb; }
+ol.ruby .escape { color: #5bb; }
+ol.xml { color: #CCCCCC; }
+ol.xml .normal { }
+ol.xml .namespace { color: #B66; font-weight: bold; }
+ol.xml .tag { color: #006666; }
+ol.xml .comment { color: #005; font-style: italic; }
+ol.xml .punct { color: #447; font-weight: bold; }
+ol.xml .string { color: #C8D0CF; }
+ol.xml .number { color: #F99; }
+ol.xml .attribute { color: #BB7; }
+
+ol.yaml { color: #CCCCCC;}
+ol.yaml .normal {}
+ol.yaml .document { font-weight: bold; color: #07F; }
+ol.yaml .type { font-weight: bold; color: #05C; }
+ol.yaml .key { color: #F88; }
+ol.yaml .comment { color: #005; font-style: italic; }
+ol.yaml .punct { color: #447; font-weight: bold; }
+ol.yaml .string { color: #944; }
+ol.yaml .number { color: #F99; }
+ol.yaml .time { color: #F99; }
+ol.yaml .date { color: #F99; }
+ol.yaml .ref { color: #944; }
+ol.yaml .anchor { color: #944; }
+
+div#code {
+  font-size: 1.1em;
+}
+
+div.code {
+  overflow:auto;
+  background-color:#000;
+}
+
+ol.code {
+  background-color:#000;
+  cell-spacing:0;
+  cell-padding:0;
+}
+
+ol.code.ruby,
+ol.code.ruby li {
+  background-color:#000;
+}
+
+ol.code.text,
+ol.code.text li {
+  color: #CCCCCC;
+  background-color:#000;
+}
+
+ol.code li {
+  font-family: monospace;
+  font-size:90%;
+  white-space:pre;
+  position:relative;
+}
+
+div#content {
+  margin-left: 0.5em;
+  clear: both;
+}
+
+div#content label {
+  color: #FF9900;
+  width: 7em;
+  float: left;
+  text-align: left;
+  margin: 0.5em;
+  display: block;
+}
+
+#snippet_body {
+  margin: 0.5em;
+}
+
+#submit {
+  margin: 0.5em;
+}
+
+.fieldWithErrors textarea, .fieldWithErrors input {
+  border: 1px solid red;
+}
+
+.errorExplanation {
+  margin: 0.5em;
+  background-color:  #336699;
+  color: white;
+  width: 40em;
+}
+
+.errorExplanation p {
+  color: white;
+}
+
+#snippet {
+  margin: 1em;
+  color: #CCCCCC;
+  line-height: 1.5em;
+}
+
+#snippet span {
+  float: left;
+  width: 7em;
+  display: block;
+  text-align: left;
+}
+
+div#content ul {
+  padding-left: 2em;
+  margin: 0px;
+}
+
+div#menu {
+  padding: 0px; 
+  margin: 1em;
+  width: 40em;
+}
+
+div#menu ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  list-style: none;
+}
+
+div#menu ul li {
+  width: 10em;
+  background-color: #111111;
+  display: block;
+  float: left;
+}
+
+h3 { color: #FF9900; }
+
+span.text_link {
+  margin-left: 1.0em;
+}
+
+pre {
+  font-size: 1.0em;
+  margin-left: 1.0em;
+}
+
+span.user_name {
+  color: #FF9900;
+}
+
+#delete {
+  margin: 1.0em;
+  color: #CCCCCC;
+  line-height: 1.5em;
+}
+
+#delete p label {
+  text-align: left;
+  width: 3em;
+}
+
+
+.flash {
+  margin: 1em;
+  line-height: 1.3em;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#flash-notice {
+  color:  #CC4200;
+}
+
+#flash-error {
+  color: #ff0000;
+}

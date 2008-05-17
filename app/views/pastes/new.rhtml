@@ -1,0 +1,21 @@
+<%= error_messages_for 'snippet' -%>
+<%= form_tag :action => 'create' -%>
+<p>
+<label for='snippet_user_name'>User Name:</label>
+<%= text_field 'snippet', 'user_name' -%>
+</p>
+<p>
+<label for='snippet_description'>Description:</label>
+<%= text_field 'snippet', 'description' -%>
+</p>
+<p>
+<label for='snippet_language'>Language:</label>
+<%= select 'snippet', 'language', Snippet::LANGUAGE_OPTIONS -%>
+</p>
+<div id='snippet_body'>
+  <%= text_area 'snippet', 'body', :rows => 20, :cols => 80 -%>
+</div>
+<div id='submit'>
+<%= submit_tag 'Submit' -%>
+</div>
+</form>

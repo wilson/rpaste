@@ -1,0 +1,23 @@
+<% flash.each do |k,v| %>
+ <div id="flash-<%= k %>" class="flash">
+  <%= v %>
+ </div>
+<% end unless flash.empty? %>
+<div id='snippet'>
+  <span>User Name:</span> <%= h @snippet.user_name %><br />
+  <span>Language:</span> <%= h @snippet.language_name %><br />
+  <span>Description:</span> <%= h @snippet.description %><br />
+</div>
+  <span class='text_link'>
+    <%= link_to "Plain Text Version", formatted_paste_url(:id => @snippet.id, :format => :txt) %>
+  </span>
+<div id='code'>
+  <%= syntax(@snippet.body, @snippet.language) %>
+</div>
+<div id='delete'>
+ <%= form_tag paste_url(@snippet) %>
+  <p><label for="key">Key:</label><%= text_field_tag 'key' %></p>
+  <%= hidden_field_tag '_method', 'delete' %>
+  <p><label>&nbsp;</label><%= submit_tag 'Delete' %></p>
+ </form>
+</div>

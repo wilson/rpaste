@@ -1,0 +1,11 @@
+<h3>Recent Snippets</h3>
+<div class='recent'>
+  <ul>
+    <% @snippets.each do |snippet| -%>
+    <li>
+    <%= link_to h(snippet.description), paste_url(:id => snippet.id) -%> (<%= snippet.language_name -%>)
+    by <span class='user_name'><%= h snippet.user_name -%></span> at <%= snippet.creation_time %>
+    </li>
+    <% end -%>
+  </ul>
+</div>

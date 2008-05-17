@@ -1,0 +1,15 @@
+first:
+  id: 100
+  language: 'ruby'
+  body: 'Hello, world.'
+  description: 'A Test'
+  user_name: 'Nobody'
+  created_at: <%= Time.now %>
+  key: 298s928s
+another:
+  id: 101
+  language: 'text'
+  user_name: 'Nobody'
+  body: 'Not much.'
+  created_at: <%= Time.now %>
+  key: Sfc8Ed94
